@@ -23,4 +23,4 @@ bundle install
 jekyll serve
 ```
 
-In a web browser, access the web page at `127.0.0.1:4000`
+In a web browser, access the web page at `127.0.0.1:4000`.
