@@ -16,9 +16,11 @@ permalink: /
         <link rel="stylesheet" href="{{ "css/front.css" | prepend: site.baseurl }}">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/academicons.css"/>
     </head>
     <body>
-        <div class="content">
+      <div class="darkener">
+      <div class="content">
             {% if site.front_img %}
             <img src="{{ site.front_img_path }}" id="fullscreen">
             {% endif %}
@@ -31,18 +33,31 @@ permalink: /
             <h3>{{ site.description }}</h3>
 
                 <ul>
-                    {% if site.github_username %}
-                    <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}"><span class="description">GitHub</span></a></li>
+
+		    {% if site.linkedin_username %}
+                    <li><a class="fa fa-2x fa-linkedin" href="https://linkedin.com/in/{{ site.linkedin_username }}"><span class="description">LinkedIn</span></a></li>
                     {% endif %}
 
-                    {% if site.codepen_username %}
-                    <li><a class="fa fa-2x fa-codepen" href="https://codepen.io/{{ site.codepen_username }}"><span class="description">CodePen</span></a></li>
+		    {% if site.professional_url %}
+                    <li><a class="fa fa-2x fa-briefcase" href="{{ site.professional_url }}"><span class="description">Professional web page</span></a></li>
+                    {% endif %}
+		    
+		    {% if site.researchgate_username %}
+                    <li><a class="ai ai-2x ai-researchgate" href="https://www.researchgate.net/profile/{{ site.researchgate_username }}"><span class="description">Research Gate</span></a></li>
+                    {% endif %}
+		    
+		    {% if site.github_username %}
+                    <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}"><span class="description">GitHub</span></a></li>
                     {% endif %}
 
                     {% if site.facebook_username %}
                     <li><a class="fa fa-2x fa-facebook" href="https://facebook.com/{{ site.facebook_username }}"><span class="description">Facebook</span></a></li>
                     {% endif %}
 
+                    {% if site.codepen_username %}
+                    <li><a class="fa fa-2x fa-codepen" href="https://codepen.io/{{ site.codepen_username }}"><span class="description">CodePen</span></a></li>
+                    {% endif %}
+		    
                     {% if site.vk_username %}
                     <li><a class="fa fa-2x fa-vk" href="https://vk.com/{{ site.vk_username }}"><span class="description">ВКонтакте</span></a></li>
                     {% endif %}
@@ -53,10 +68,6 @@ permalink: /
 
                     {% if site.google_plus_username %}
                     <li><a class="fa fa-2x fa-google-plus" href="https://plus.google.com/+{{ site.google_plus_username }}"><span class="description">Google +</span></a></li>
-                    {% endif %}
-
-                    {% if site.linkedin_username %}
-                    <li><a class="fa fa-2x fa-linkedin" href="https://linkedin.com/in/{{ site.linkedin_username }}"><span class="description">LinkedIn</span></a></li>
                     {% endif %}
 
                     {% if site.vine_username %}
@@ -116,6 +127,6 @@ permalink: /
                     {% endif %}
                 </ul>
         </div>
-
+      </div>
     </body>
 </html>
