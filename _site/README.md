@@ -1,4 +1,4 @@
-# My personal "front" webpage
+# My personal "front" web page
 
 # Credits
 
@@ -6,7 +6,7 @@ Theme: based on <a href="https://github.com/dashingcode">@dashingcode</a>'s <a h
 
 The Font Cover Jekyll theme makes use of both the <a href="http://fontawesome.io/">Font Awesome</a> icons and the <a href="http://jpswalsh.github.io/academicons/">Academicons</a> icons.
 
-# Installation and pre-visualization
+# Installation and previsualization
 
 ## Installation
 
@@ -17,10 +17,10 @@ gem install jekyll bundler --user-install
 bundle install
 ```
 
-## Pre-visualization before deployment
+## Local previsualization before deployment
 
 ```shell
 jekyll serve
 ```
 
-In a web browser, access the web page at `127.0.0.1:4000`
+In a web browser, access the web page at `127.0.0.1:4000`.
