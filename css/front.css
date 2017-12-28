@@ -127,3 +127,9 @@ a:hover {
     padding-top: 60px;
 }
 }
+.backgroundInfo {
+    color: white;
+    position:absolute;
+    bottom:2%;
+    right:2%;
+}
