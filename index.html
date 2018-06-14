@@ -39,6 +39,14 @@ permalink: /
 
         <ul>
 
+	  {% if site.cv_url %}
+
+	  <li><a class="fa fa-2x fa-file-text" href="{{ site.cv_url }}">
+	      <span class="description">Résumé</span></span>
+	    </a>
+	  </li>
+          {% endif %}
+	  
 	  {% if site.professional_url %}
           <li><a class="fa fa-2x fa-briefcase" href="{{ site.professional_url }}"><span class="description">Professional web page</span></a></li>
           {% endif %}
